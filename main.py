@@ -5,7 +5,7 @@ import argparse
 def args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-u","--user",help='name of the user',type=str)
-    parser.add_argument('-m',"--mode",nargs='?',help='mode of service',type=str,default='-d')
+    parser.add_argument('-m',"--mode",nargs='?',help='mode of service',type=str,default='')
     parser.add_argument("-p","--port",help="port on which the service should run",type=int)
     args=parser.parse_args()
     return args
