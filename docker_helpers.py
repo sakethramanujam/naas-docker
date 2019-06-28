@@ -10,6 +10,6 @@ def container_id(container_name):
 
 
 def start_container(user,volume,port,mode):
-    os.system("docker run --name {} -v {}:/home/joyvan -p {}:8888 {} jupyter/base-notebook".format(user,volume,port,mode))
+    os.system("docker run --name {} -v {}:/home/jovyan -p {}:8888 {} jupyter/base-notebook".format(user,volume,port,mode))
     id = container_id(user)
     return id
